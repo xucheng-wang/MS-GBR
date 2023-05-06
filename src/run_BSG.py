@@ -7,8 +7,8 @@ from main_BSG import run_simulation
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--maxIter',       type=int,   default=200)# keep this 400
-parser.add_argument('--lr',            type=float, default=0.006)# change this from 0.1 to 0.005
+parser.add_argument('--maxIter',       type=int,   default=110)# keep this 400
+parser.add_argument('--lr',            type=float, default=0.005)# change this from 0.1 to 0.005
 parser.add_argument('--n',             type=int,   default=100)
 parser.add_argument('--graph',         type=str,   default='Email')
 parser.add_argument('--c_mode',        type=str,   default='gaussian')

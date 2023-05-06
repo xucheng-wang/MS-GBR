@@ -97,7 +97,7 @@ def gen_graph(n=100, graph='BTER', seed=12, withinProb=0.2):
     elif graph == 'RG':
         G = nx.random_geometric_graph(n, 0.4, seed=seed)
     elif graph == 'Email':
-        G = nx.read_edgelist('/Users/davidwang/Desktop/my_research/GBR_network/data/email-Eu-core-cc.txt', delimiter=' ', nodetype=int)
+        G = nx.read_edgelist('../data/email-Eu-core-cc.txt', delimiter=' ', nodetype=int)
         mapping = {n: i for i, n in enumerate(list(G.nodes()))}
         G = nx.relabel_nodes(G, mapping)
     elif graph == 'Youtube':
@@ -117,7 +117,7 @@ def gen_graph(n=100, graph='BTER', seed=12, withinProb=0.2):
     elif graph == 'Complete':
         G = nx.complete_graph(n)
     elif graph == 'Facebook':
-        G = nx.read_edgelist('/Users/davidwang/Desktop/my_research/GBR_network/data/facebook_combined.txt', nodetype=int)
+        G = nx.read_edgelist('../data/facebook_combined.txt', nodetype=int)
         mapping = {item: idx for idx, item in enumerate(G.nodes())}
         G = nx.relabel_nodes(G, mapping)
 

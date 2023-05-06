@@ -286,7 +286,7 @@ class Bestshot(object):
         return (x, L)
 
 ###########################################################################
-## BHGame may not be used anymore
+## BHGame may need to be removed since there is no paramter that controls the similarity between players
 class BHGame(object):
     def __init__(self, n, G, b_vec=None, beta=None, lb=0.0, ub=1.0):
         self.lb = lb
