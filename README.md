@@ -5,7 +5,7 @@
 - recommand working in conda environemnt
 - The data needed to run the simulation is [here](https://www.dropbox.com/s/uss99d5xwzgapg5/data.zip?dl=0).
 
-## Files in src
+## Files in src:
 - utils.py: defines helper functions for constructing games, communities, etc.
   - change file path based on your working env in gen_graph to access data
   - gen_b/gen_normalized_b helps to generate parameter vectors, where gen_normalized_b generates values from 0 to 1
